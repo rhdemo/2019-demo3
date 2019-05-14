@@ -1,0 +1,64 @@
+{
+  "nodes": [
+      {
+      "name": "summit-master-0",
+      "driver": "ipmi",
+      "resource_class": "baremetal",
+      "driver_info": {
+        "ipmi_username": "root",
+        "ipmi_password": "hendrix",
+        "ipmi_address": "172.16.202.2",
+        "deploy_kernel": "http://172.22.0.1/images/ironic-python-agent.kernel",
+        "deploy_ramdisk": "http://172.22.0.1/images/ironic-python-agent.initramfs"
+      },
+      "ports": [{
+        "address": "98:03:9b:61:80:48",
+        "pxe_enabled": true
+      }],
+      "properties": {
+        "local_gb": "50",
+        "cpu_arch": "x86_64"
+      }
+    },
+    {
+      "name": "summit-master-1",
+      "driver": "ipmi",
+      "resource_class": "baremetal",
+      "driver_info": {
+        "ipmi_username": "root",
+        "ipmi_password": "hendrix",
+        "ipmi_address": "172.16.202.3",
+        "deploy_kernel": "http://172.22.0.1/images/ironic-python-agent.kernel",
+        "deploy_ramdisk": "http://172.22.0.1/images/ironic-python-agent.initramfs"
+      },
+      "ports": [{
+        "address": "98:03:9b:61:ae:18",
+        "pxe_enabled": true
+      }],
+      "properties": {
+        "local_gb": "50",
+        "cpu_arch": "x86_64"
+      }
+    },
+    {
+      "name": "summit-master-2",
+      "driver": "ipmi",
+      "resource_class": "baremetal",
+      "driver_info": {
+        "ipmi_username": "root",
+        "ipmi_password": "hendrix",
+        "ipmi_address": "172.16.202.4",
+        "deploy_kernel": "http://172.22.0.1/images/ironic-python-agent.kernel",
+        "deploy_ramdisk": "http://172.22.0.1/images/ironic-python-agent.initramfs"
+      },
+      "ports": [{
+        "address": "98:03:9b:61:ba:d0",
+        "pxe_enabled": true
+      }],
+      "properties": {
+        "local_gb": "50",
+        "cpu_arch": "x86_64"
+      }
+    }
+        ]
+}
